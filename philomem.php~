@@ -1,0 +1,39 @@
+<link rel="stylesheet" type"=text/css" href="contents/philomem-data/css/PhiloMem.css" />
+<div class="bodywrapper clearfix" id="bodywrapper">
+
+<?php
+require_once "philomem-data/class/game.class.php";
+require_once "philomem-data/class/players.class.php";
+require_once "philomem-data/class/cards.class.php";
+require_once "philomem-data/class/interface.class.php";
+
+$game = new Game();
+$alex = new Player(1,"Alex");
+
+?>
+
+
+<div class="clearfix">
+  <div class="philmemmain clearfix" id="gameWrapper">
+
+    <?php
+    $game->printCards();
+    ?>
+  </div>
+    <div class="philmemaside clearfix">
+        <?php
+        $game->printPlayers();
+        ?>
+
+         <div class="asideform">
+         <?php include "philomem-data/tpl/formular.template.php"; ?>
+         </div>
+    </div> <!-- Ende philmemaside -->
+
+
+
+
+</div>
+    </div>
+
+    <script type="text/javascript" src="contents/philomem-data/js/engine.js"></script>

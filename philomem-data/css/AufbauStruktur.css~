@@ -1,0 +1,96 @@
+
+.bodywrapper {
+  position: relative;
+  background: inherit;
+  width: 1000px;
+  min-height: 900px;
+}
+
+.philmemmain {
+  float: left;
+  width: 800px;
+  box-sizing: border-box;
+  top: 20px;
+  left: 0;
+  padding: 10px;
+}
+
+.philmemaside {
+	position: absolute;
+	width: 230px;
+	max-width: 250px;
+	top: 20px;
+	left: 800px;
+  box-sizing: border-box;
+}
+
+.philmemaside form {
+	width: 180px;
+}
+
+.philmemaside fieldset {
+	display: block;
+	vertical-align: bottom;
+	width: 180px;
+}
+
+
+
+.clearfix:after {
+    position: absolute;
+    width: 100%;
+    content: ".";
+    display: block;
+    visibility: hidden;
+	clear: both;
+}
+
+.cardWrapper {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 10px;
+  background: inherit;
+}
+
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0.5px 0.5px 0 #eee;
+  box-shadow: 1px 1px 0 #222;
+  width: inherit;
+  height: inherit;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.cardBack {
+  background-color: #222;
+  background-image: url(Zeichnung.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.philmemnav,
+.asideform,
+.playerPanel {
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 0 0.5px #ccc;
+  box-shadow: 0 0 0.8px #ccc;
+  padding: 1rem;
+  width: 100%;
+  margin: 0 0 10px 0;
+  }
+
+.inputNumber {
+	width: 3em;
+	margin-left: 1em;
+}
+
